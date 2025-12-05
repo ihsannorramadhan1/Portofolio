@@ -1,139 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portofolio profesional Ihsan Nor Ramadhan.">
-    <meta name="keywords" content="Portofolio, Web Development, Ihsan Nor Ramadhan">
-    <meta name="author" content="Ihsan Nor Ramadhan">
-
+    <meta name="description" content="Ihsan Nor Ramadhan - Web Developer & Data Analyst Portfolio">
     <title>Ihsan Nor Ramadhan | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container">
-            <h1> Hi, I'm <span>Ihsan Nor Ramadhan</span></h1>
-            <p>Informatics Engineering | Web Development | Data Analysis</p>
-            <a href="#portfolio" class="btn-primary">Explore My Work</a>
-        </div>
-    </header>
+    <!-- Background Animation Container -->
+    <div id="cosmos-container"></div>
 
     <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
-                <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
-                <li><a href="#testimonials"><i class="fas fa-comment"></i> Testimonials</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Haii</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <div class="container about">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>
-                    I am an <strong>Informatics Engineering student</strong> with a passion for creating impactful digital solutions. My experience includes participating in a Student Exchange Program at Bandung Institute of Technology, where I honed my technical and problem-solving skills.
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <span class="greeting">Hello, I'm</span>
+                <h1>Ihsan Nor Ramadhan</h1>
+                <p class="role">Informatics Engineering | BackEnd Development | Data Analysis</p>
+                <p class="description">
+                    I build accessible, pixel-perfect, and performant web experiences.
+                    Currently focused on creating impactful digital solutions.
                 </p>
-                <p>
-                    I am committed to continuous learning, teamwork, and delivering high-quality results. Currently, I am developing innovative applications that address real-world challenges using modern technologies.
-                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
             </div>
-            <div class="about-img">
-                <img src="assets/PF.jpg" alt="Ihsan Nor Ramadhan's Photo">
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="assets/PF.jpg" alt="Ihsan Nor Ramadhan">
+                </div>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio">
+    <!-- About Section -->
+    <section id="about" class="section">
         <div class="container">
-            <h2>My Portfolio</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="assets/img/project1.jpg" alt="Project 1">
-                    <h3>Phishing Detection System</h3>
-                    <p>Developed an AI system to detect phishing attempts in emails and text messages.</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="assets/img/project2.jpg" alt="Project 2">
-                    <h3>Food Recommendation App</h3>
-                    <p>An intelligent app providing personalized food recommendations.</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="assets/img/project3.jpg" alt="Project 3">
-                    <h3>Interactive Data Dashboard</h3>
-                    <p>Designed a dynamic dashboard for effective data visualization.</p>
-                </div>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    Informatics Engineering student with strong foundation in backend development, databases, and
+                    API integration. Experienced in building and deploying web applications through both academic
+                    and personal projects. Skilled in Laravel, PHP, Database, and Python, with hands-on practice
+                    developing scalable systems like recommendation platforms, gamified productivity tools, and
+                    interactive voice-training apps. Eager to contribute as a backend developer by applying technical
+                    expertise and problem-solving skills in real-world environments.
+                </p>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" class="section bg-light">
         <div class="container">
-            <h2>Skills</h2>
+            <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
-                <div class="skill"><i class="fab fa-html5"></i> HTML5, CSS3, JavaScript</div>
-                <div class="skill"><i class="fab fa-python"></i> Python (Flask, Django)</div>
-                <div class="skill"><i class="fas fa-database"></i> MySQL, Data Analysis</div>
-                <div class="skill"><i class="fas fa-pen"></i> Tecnical Content Writing, Copy Writing, SEO</div>
+                <div class="skill-card">
+                    <div class="icon-box"><i class="fab fa-html5"></i></div>
+                    <h3>Frontend</h3>
+                    <p>HTML5, CSS3, JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-box"><i class="fab fa-python"></i></div>
+                    <h3>Backend</h3>
+                    <p>Python (Flask, Django)</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-box"><i class="fas fa-database"></i></div>
+                    <h3>Database</h3>
+                    <p>MySQL, Data Analysis</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-box"><i class="fas fa-pen"></i></div>
+                    <h3>Content</h3>
+                    <p>Technical Writing, SEO</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials">
+    <!-- Projects Section -->
+    <section id="projects" class="section">
         <div class="container">
-            <h2>What People Say</h2>
-            <div class="testimonial">
-                <h4>- </h4>
-            </div>
-            <div class="testimonial">
-                <h4>- </h4>
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Phishing Detection System</h3>
+                        <p>Developed an AI system to detect phishing attempts in emails and text messages.</p>
+                        <a href="#" class="link-arrow">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Food Recommendation App</h3>
+                        <p>An intelligent app providing personalized food recommendations based on user preferences.</p>
+                        <a href="#" class="link-arrow">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Interactive Data Dashboard</h3>
+                        <p>Designed a dynamic dashboard for effective data visualization and analysis.</p>
+                        <a href="#" class="link-arrow">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="section bg-light">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/08824530161">+62 882-4530-1261</a></p>
-            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:ihsan.official9@gmail.com">ihsan.official9@gmail.com</a></p>
-            <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/ihsannorramadhan/" target="_blank">LinkedIn Profile</a></p>
-            <p><i class="fab fa-github"></i> Github: <a href="https://github.com/ihsannorramadhan1" target="_blank">Github</a></p>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:ihsan.official9@gmail.com">ihsan.official9@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/08824530161">+62 882-4530-1261</a>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ihsannorramadhan/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/ihsannorramadhan1" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="feedback-form-wrapper">
+                    <h3>Send a Message</h3>
+                    <form id="feedback-form">
+                        <div class="form-group">
+                            <input type="text" id="feedback-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="feedback-email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="feedback-message" placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <p id="feedback-response"></p>
+                </div>
+            </div>
         </div>
     </section>
-<!-- Feedback Section -->
-<section id="feedback">
-    <div class="container">
-        <h2>Feedback</h2>
-        <p>Kami sangat menghargai masukan Anda untuk meningkatkan layanan kami!</p>
-        <form id="feedback-form">
-            <input type="text" id="feedback-name" placeholder="Nama Anda" required>
-            <input type="email" id="feedback-email" placeholder="Email Anda" required>
-            <textarea id="feedback-message" placeholder="Masukkan Feedback Anda" rows="5" required></textarea>
-            <button type="submit" class="btn-primary">Kirim Feedback</button>
-        </form>
-        <p id="feedback-response" style="margin-top: 10px; font-weight: bold;"></p>
-    </div>
-</section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Ihsan Nor Ramadhan. All Rights Reserved.</p>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>
